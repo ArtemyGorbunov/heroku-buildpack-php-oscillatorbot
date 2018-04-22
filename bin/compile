@@ -411,6 +411,8 @@ fi
 COMPOSER_bak="$COMPOSER"
 export COMPOSER=composer.json
 
+source $BP_DIR/bin/trader
+
 # unless we're running a CI build...
 if [[ "${HEROKU_PHP_INSTALL_DEV+CI}" != "CI" ]]; then
 	status "Checking for additional extensions to install..."
